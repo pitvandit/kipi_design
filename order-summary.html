@@ -1,0 +1,108 @@
+
+<div class="container">
+    <h1 class="article-title">Potwierdź zamówienie</h1>
+
+    <div class="order-list">
+
+        <div class="order-item-row">
+            <div class="pic">
+                <img src="img/products/order-thumb.jpg" alt="" >
+            </div>
+            <div class="item-info">
+                <div class="name">
+                    <h4>Koszula Pink mini</h4>
+                    <span>rozmiar M</span>
+                    <span>kolor Pink</span>
+                </div>
+                <div class="quantity">
+                    <label>ilość </label>
+                    <select class="select-item">
+                        <option value="" selected="selected">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                </div>
+                <div class="price">
+                    <span>20 PLN</span>
+                </div>
+                <div class="close-x">
+                    <div class="elem-del set-rel">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-item-row">
+            <div class="pic">
+                <img src="img/products/order-thumb.jpg" alt="" >
+            </div>
+            <div class="item-info">
+                <div class="name">
+                    <h4>Koszula Pink mini</h4>
+                    <span>rozmiar M</span>
+                    <span>kolor Pink</span>
+                </div>
+                <div class="quantity">
+                    <label>ilość </label>
+                    <select class="select-item">
+                        <option value="" selected="selected">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                </div>
+                <div class="price">
+                    <span>20 PLN</span>
+                </div>
+                <div class="close-x">
+                    <div class="elem-del set-rel">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <a href="start.html" class="btn-back"><i class="glyphicon glyphicon-menu-left" aria-hidden="true"></i> Kontynuuj zakupy</a>
+            <span><strong>Razem do zapłaty</strong> 2700 PLN</span>
+        </div>
+
+        <a href="order-dane.html" class="btn-primary pull-right">Przejdź do kasy</a>
+        <div class="clearfix" style="height: 100px;"></div>
+    </div>
+
+
+    <div class="order-summary">
+        <div class="back">
+            <a href="order-dane.html" class="btn-back"><i class="glyphicon glyphicon-menu-left" aria-hidden="true"></i> Wróć</a>
+        </div>
+        <div class="info">
+            <div class="">
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+<script>
+    $( document ).ready(function() {
+        website.initMenuAjax( website.config.ajaxhref );
+        $( ".select-item" ).selectBoxIt({
+            showEffect: "slideDown",
+            showEffectSpeed: 300,
+            hideEffect: "slideUp",
+            hideEffectSpeed: 300
+        });
+
+    });
+</script>

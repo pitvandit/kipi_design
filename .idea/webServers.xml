@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="adecfd08-9653-4462-ad52-35b63071746e" name="cyrkonia" url="http://cyrkonia.pl">
+        <fileTransfer host="cyrkonia.pl" port="21" password="dfc3dfd3df9adfcedff8dfe1dff3dfc1" username="cyrkonia1">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

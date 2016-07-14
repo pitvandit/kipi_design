@@ -1,0 +1,59 @@
+
+@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700);
+
+@font-face {
+    font-family: 'NeutrafaceText';
+    src: url('../fonts/NeutrafaceText-BookAlt.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NeutrafaceText-BookAlt.otf')  format('opentype'),
+    url('../fonts/NeutrafaceText-BookAlt.woff') format('woff'),
+    url('../fonts/NeutrafaceText-BookAlt.ttf')  format('truetype'),
+    url('../fonts/NeutrafaceText-BookAlt.svg#NeutrafaceText-BookAlt') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutrafaceText';
+    src: url('../fonts/NeutrafaceText-DemiAlt.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NeutrafaceText-DemiAlt.otf')  format('opentype'),
+    url('../fonts/NeutrafaceText-DemiAlt.woff') format('woff'),
+    url('../fonts/NeutrafaceText-DemiAlt.ttf')  format('truetype'),
+    url('../fonts/NeutrafaceText-DemiAlt.svg#NeutrafaceText-DemiAlt') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutrafaceText';
+    src: url('../fonts/NeutrafaceText-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NeutrafaceText-Bold.otf')  format('opentype'),
+    url('../fonts/NeutrafaceText-Bold.woff') format('woff'),
+    url('../fonts/NeutrafaceText-Bold.ttf')  format('truetype'),
+    url('../fonts/NeutrafaceText-Bold.svg#NeutrafaceText-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*@font-face {*/
+/*font-family: 'NeutrafaceText-Book';*/
+/*src: url('../fonts/NeutrafaceText-Book.eot?#iefix') format('embedded-opentype'),  */
+/*url('../fonts/NeutrafaceText-Book.otf')  format('opentype'),*/
+/*url('../fonts/NeutrafaceText-Book.woff') format('woff'), */
+/*url('../fonts/NeutrafaceText-Book.ttf')  format('truetype'), */
+/*url('../fonts/NeutrafaceText-Book.svg#NeutrafaceText-Book') format('svg');*/
+/*font-weight: normal;*/
+/*font-style: normal;*/
+/*}*/
+
+/*@font-face {*/
+    /*font-family: 'NeutrafaceText-Demi';*/
+    /*src: url('../fonts/NeutrafaceText-Demi.eot?#iefix') format('embedded-opentype'),  */
+    /*url('../fonts/NeutrafaceText-Demi.otf')  format('opentype'),*/
+    /*url('../fonts/NeutrafaceText-Demi.woff') format('woff'),*/
+    /*url('../fonts/NeutrafaceText-Demi.ttf')  format('truetype'),*/
+    /*url('../fonts/NeutrafaceText-Demi.svg#NeutrafaceText-Demi') format('svg');*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+/*}*/
+

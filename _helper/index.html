@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+
+
+      <link href="select-boxit.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+
+
+      <script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="jquery-ui-1.11.4.min.js"></script>
+      <script src="select-boxit.min.js" type="text/javascript"></script>
+
+
+
+  </head>
+
+  <body>
+    <div class="s-container">
+  <select id="sortmenu">
+      <option value="*" selected="selected">wszystko</option>
+      <option value=".filter-dress">dresses</option>
+      <option value=".filter-tshirt">t-shirt</option>
+      <option value=".filter-tshirt">t-shirt</option>
+      <option value=".filter-tshirt">t-shirt</option>
+      <option value=".filter-tshirt">t-shirt</option>
+  </select>
+    </div>
+
+<script>
+    $("#sortmenu").selectBoxIt({
+        showEffect: "slideDown",
+        showEffectSpeed: 400,
+        hideEffect: "slideUp",
+        hideEffectSpeed: 400
+
+    });
+
+
+</script>
+
+
+  </body>
+</html>

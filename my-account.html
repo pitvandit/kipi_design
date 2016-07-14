@@ -1,0 +1,126 @@
+
+<div class="container">
+    <h1 class="article-title">Moje Konto</h1>
+    <div class="row">
+        <div class="col-md-5 form-container">
+            <h3>Mam już konto</h3>
+            <div class="row row-space">
+                <div class="col-sm-4">
+                    <span>Adres E-mail</span>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" placeholder="Twój adres e-mail" name="email">
+                </div>
+            </div>
+            <div class="row row-space">
+                <div class="col-sm-4">
+                    <span>Hasło</span>
+                </div>
+                <div class="col-sm-8">
+                    <input type="password" placeholder="Twoje hasło" name="password">
+                </div>
+            </div>
+            <div class="row row-space log-in">
+                <div class="col-sm-6">
+                    <a href="#" class="btn-link">Zapomniałeś hasła?</a>
+                </div>
+                <div class="col-sm-6">
+                    <a href="my-account-details.html" class="btn-primary pull-right">Zaloguj się</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-5 col-md-offset-2 form-container">
+            <h3>Nie mam jeszcze konta</h3>
+            <p>Załóż konto i bądź na bieżąco z promocjami oraz dostępem do historii swoich zamówień na kipidesign.com.</p>
+
+            <div class="register-form">
+
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Imię lub firma*</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" placeholder="Imię lub firma" name="name">
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Nazwisko lub firma*</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" placeholder="Nazwisko lub firma" name="surname">
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Telefon</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" placeholder="Telefon kontaktowy" name="phone">
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Adres e-mail*</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" placeholder="Twój adres e-mail" name="email">
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Hasło*</span>
+                        <p>Co najmniej 6 znaków.</p>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="password" placeholder="Podaj Hasło" name="password">
+                    </div>
+                </div>
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Potwierdź hasło*</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="password" placeholder="Potwierdź Hasło" name="password-2">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row row-space log-in">
+                <div class="col-sm-6">
+                    <p class="reqired-fields">*pola obowiązkowe</p>
+                </div>
+                <div class="col-sm-6">
+                    <a href="#" class="btn-primary pull-right set-new-account">Załóż nowe konto</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="clearfix" style="height:100px;"></div>
+
+</div>
+
+<script>
+
+    $( document ).ready(function() {
+        website.initMenuAjax( website.config.ajaxhref );
+        $(".set-new-account").click( function(e){
+            e.preventDefault();
+            $(this).html('Zarejestruj');
+            $(this).removeClass('set-new-account');
+            $('.register-form').slideDown(500);
+            $('.reqired-fields').fadeIn(500);
+        });
+    });
+</script>

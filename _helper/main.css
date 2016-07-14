@@ -1,0 +1,22 @@
+.s-container {
+
+}
+
+.s-container .selectboxit-container .selectboxit {
+    border-radius: 0px;
+}
+
+.selectboxit-btn {
+    background: none;
+    border:none;
+    border-bottom:1px solid #000000;
+}
+.selectboxit-btn.selectboxit-enabled:hover, .selectboxit-btn.selectboxit-enabled:focus, .selectboxit-btn.selectboxit-enabled:active {
+    background: none;
+}
+.selectboxit .selectboxit-option-icon-container {
+    margin-left: 0px;
+}
+.selectboxit-text {
+    text-indent: 0px;
+}

@@ -1,0 +1,143 @@
+
+<div class="container">
+    <h1 class="article-title">Dane do przesyłki</h1>
+
+    <div class="row row-space">
+        <div class="col-sm-3 form-container">
+            <span>sposób dostawy*</span>
+        </div>
+        <div class="col-sm-9 select-wide">
+            <select class="select-delivery" data-size="10">
+                <option value="" selected="selected">Przesyłka kurierska (+25zł)</option>
+                <option value="">Przesyłka Pocztą (+35zł)</option>
+                <option value="">Odbiór osobisty (0zł)</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="row row-space">
+        <div class="col-sm-3 form-container">
+            <span>Forma płatności*</span>
+        </div>
+        <div class="col-sm-9 select-wide">
+            <select class="select-delivery" data-size="10">
+                <option value="" selected="selected">Przelew internetowy (PayU)</option>
+                <option value="">Karta kredytowa</option>
+                <option value="">przy odbiorze</option>
+            </select>
+        </div>
+
+    </div>
+
+
+    <div class="clearfix" style="height: 50px;"></div>
+    <div class="row">
+        <div class="col-md-5 form-container">
+            <div class="row row-space">
+                <div class="col-sm-5">
+                    <span>Imię lub firma*</span>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" placeholder="Imię lub firma" name="name">
+                </div>
+            </div>
+            <div class="row row-space">
+                <div class="col-sm-5">
+                    <span>Nazwisko lub firma*</span>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" placeholder="Nazwisko lub firma" name="surname">
+                </div>
+            </div>
+            <div class="row row-space">
+                <div class="col-sm-5">
+                    <span>Ulica, nr domu / nr mieszkania*</span>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" placeholder="Ulica, nr domu / nr mieszkania" name="address">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5 col-md-offset-2 ">
+            <div class="row row-space form-container">
+                <div class="col-sm-5">
+                    <span>Kod pocztowy*</span>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" placeholder="Kod pocztowy" name="postal">
+                </div>
+            </div>
+            <div class="row row-space form-container">
+                <div class="col-sm-5">
+                    <span>Miejscowość*</span>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" placeholder="Miejscowość" name="city">
+                </div>
+            </div>
+            <div class="row row-space">
+                <div class="col-sm-5 form-container">
+                    <span>Kraj*</span>
+                </div>
+                <div class="col-sm-7 select-wide">
+                    <select class="select-country" data-size="10">
+                        <option value="" selected="selected">Wybierz kraj</option>
+                        <option value="">Andora</option>
+                        <option value="">Azerbejdżan</option>
+                        <option value="">Polska</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="clearfix" style="height: 50px;"></div>
+
+    <div class="row row-space log-in">
+        <div class="col-sm-6">
+            <a href="order.html" class="btn-back"><i class="glyphicon glyphicon-menu-left" aria-hidden="true"></i> Wróć</a>
+        </div>
+        <div class="col-sm-6">
+            <div class="order-accept">
+                <p class="reqired-fields">*pola obowiązkowe</p>
+                <a href="order-summary.html" class="btn-primary">Potwierdź zamówienie</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix" style="height: 100px;"></div>
+
+</div>
+
+<script>
+    $( document ).ready(function() {
+        $( ".select-item" ).selectBoxIt({
+            showEffect: "slideDown",
+            showEffectSpeed: 300,
+            hideEffect: "slideUp",
+            hideEffectSpeed: 300
+        });
+
+        $( ".select-country" ).selectBoxIt({
+            showEffect: "slideDown",
+            showEffectSpeed: 300,
+            hideEffect: "slideUp",
+            hideEffectSpeed: 300,
+            showFirstOption: false,
+            autoWidth: false
+        });
+
+        $( ".select-delivery" ).selectBoxIt({
+            showEffect: "slideDown",
+            showEffectSpeed: 300,
+            hideEffect: "slideUp",
+            hideEffectSpeed: 300,
+            autoWidth: false
+        });
+
+    });
+</script>
