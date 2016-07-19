@@ -18,11 +18,11 @@ var website = {
         //allow overriding the default config
         $.extend( website.config, settings );
         website.setup();
-        website.initNav();
+
         website.initMenuAjax( website.config.ajaxhref );
         website.initCartMenu();
 
-        website.loadPage('start.html');
+        website.loadPage('product-page.html');
         setInterval( function() {
             /*website.initFitSection( website.config.sectionfit );
              website.initFitImage( website.config.imagefit );*/
@@ -36,6 +36,7 @@ var website = {
         
         website.initFitSection( obj.find( website.config.sectionfit ) );
         website.initFitImage( obj.find( website.config.imagefit ) );
+        website.aboutTextResize();
 
         website.initBxSlider( obj.find( website.config.bxslider ) );
         //website.initBxSliderStart( obj.find( website.config.bxsliderStart ) );
@@ -46,17 +47,33 @@ var website = {
         website.initSmoothScroll( obj.find( website.config.smoothscroll ) );
         website.initAnimate( obj.find( website.config.animate ) );
         website.initNanoScroller( obj.find( website.config.nano ) );
+        website.initNav();
+
 
     },
     resize: function() {
         website.initFitSection( website.config.sectionfit );
         website.initFitImage( website.config.imagefit );
         website.menuResize();
+        website.aboutTextResize();
+
+
     },
 
     //Init all lazy images based on .lazy class
     //Init NAV
-    initNav: function( ) {
+    initNav: function() {
+
+        if ( $("#page-content > div").hasClass("menu-white") ) {
+            console.log(true);
+            $(".menu-open").addClass('white-elem');
+            $('.cart').addClass('white-elem');
+        } else  {
+            $(".menu-open").removeClass('white-elem');
+            $('.cart').removeClass('white-elem');
+            console.log(false);
+        };
+
 
         if( $(".menu-holder").hasClass("init") )
             return;
@@ -157,6 +174,15 @@ var website = {
                 top: 0
             });
         }
+
+    },
+
+
+    //About text center
+    aboutTextResize: function() {
+
+
+        $(".about-us .text-holder .nano").css('height', $(".about-us .text-holder .nano .nano-content > div").actual('height')+40 );
 
     },
 

@@ -188,6 +188,8 @@ header {
     transition: all 0.5s ease; }
   header .cart.white span {
     color: #ffffff; }
+  header .cart.white-elem span {
+    color: #ffffff; }
   header .cart .your-cart {
     padding: 0px 10px; }
   header .cart .cart-quantity {
@@ -201,6 +203,8 @@ header {
     line-height: 20px;
     text-align: center; }
   header .cart.white .cart-quantity span {
+    border: 1px solid #ffffff; }
+  header .cart.white-elem .cart-quantity span {
     border: 1px solid #ffffff; }
 
 /* ===== MAIN MENU ===== */
@@ -224,6 +228,9 @@ header {
   background: #000000;
   transition: all 0.2s ease; }
 
+.menu-open.white-elem .icon-bar {
+  background: #ffffff; }
+
 .menu-open .icon-bar:first-of-type {
   margin-bottom: 5px;
   margin-left: 0px;
@@ -233,6 +240,18 @@ header {
   margin-top: 5px;
   margin-left: 7px;
   width: 36px; }
+
+.menu-open:hover .icon-bar:first-of-type {
+  margin-bottom: 5px;
+  margin-left: 27px;
+  width: 20px;
+  transform: rotate(45deg); }
+
+.menu-open:hover .icon-bar:last-of-type {
+  margin-top: 5px;
+  margin-left: 27px;
+  width: 20px;
+  transform: rotate(-45deg); }
 
 .menu-holder {
   position: fixed;
@@ -996,9 +1015,9 @@ header {
 
 .product-similar {
   background: #ffffff;
-  margin: 0px 10px 30px; }
+  margin: 0px 0px 30px; }
 
-.product-similar h2 {
+.product-similar h2.head-title {
   font-size: 3.8rem;
   text-align: center;
   padding: 30px 20px 20px 0px; }
@@ -1239,6 +1258,58 @@ header {
   margin: 0px 40px 0px 10px; }
 
 /* ===== CONTAINERS ===== */
+/* ===== ABOUT US ===== */
+.about-us .text-holder {
+  background: #000000;
+  color: #ffffff;
+  padding: 80px 120px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch; }
+
+.about-us .text-holder .nano {
+  height: auto;
+  flex: 0 1 auto; }
+
+.about-us .text-holder .nano-content > div {
+  padding: 0 25px 0 0; }
+
+.about-us .text-holder .nano-content > div h1 {
+  font-size: 4.8rem;
+  margin: 0 0 30px;
+  letter-spacing: 4px; }
+
+.about-us .text-holder .nano-content > div h4 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 0 0 20px;
+  text-transform: none;
+  letter-spacing: 0px; }
+
+.about-us .text-holder .nano-content > div p {
+  color: #7b7b7b;
+  line-height: 180%; }
+
+.about-us .social {
+  text-align: right; }
+
+.about-us .social a {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #7b7b7b;
+  font-size: 4.0rem;
+  -webkit-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  transform: scale(0.4);
+  transition: all 0.2s ease; }
+
+.about-us .social a:hover {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5); }
+
 /* ===== Contact ===== */
 /* ===== FOOTER ===== */
 footer {
