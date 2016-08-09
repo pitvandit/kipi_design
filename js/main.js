@@ -214,9 +214,9 @@ var website = {
             $('header .cart').addClass('white');
             TweenMax.to( $(".cart-menu") , 0.4, {top:0, ease: Cubic.easeOut, overwrite:"all", delay:0});
             TweenMax.to( $(".cart-menu .cart-list") , 0.3, {opacity:1, overwrite:"all", delay:0});
-            $(".cart-menu .cart-list li").each(function(index) {
-                TweenMax.fromTo($(this), 0.5, {scale: 0.5, x: 300}, {scale: 1, x: 0, ease: Cubic.easeOut, overwrite: "all", delay: (index * 0.1)+0.1});
-                $(this).find('.del').click( function() {
+            $(".cart-menu .cart-list li").each(function(index,el) {
+                TweenMax.fromTo($(el), 0.5, {scale: 0.5, x: 300}, {scale: 1, x: 0, ease: Cubic.easeOut, overwrite: "all", delay: (index * 0.1)+0.1});
+                $(el).find('.del').click( function() {
                     $(this).parent().fadeOut(500,function(){
                         $(this).remove();
                         $(".cart-menu .cart-list .nano").nanoScroller();

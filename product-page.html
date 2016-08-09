@@ -38,7 +38,7 @@
             </form>
            </td>
        </tr>
-        <tr>
+        <tr class="size-row">
             <td class="col-left">Rozmiar</td>
             <td class="picker size">
                 <form>
@@ -354,6 +354,20 @@
 
       };
 
+
+
+      function setSizeActive() {
+          $(".p-table .size-row").hide();
+          $(".picker.color label").each(function(id,el) {
+                $(el).click( function() {
+                        if ( !$(".p-table .size-row").is(":visible") ) {
+                            $(".p-table .size-row").fadeIn();
+                            console.log('showw');
+                        };
+                    });
+          });
+      }
+
       $( document ).ready(function() {
           website.setup();
           website.initMenuAjax( '.grid-elem a' );
@@ -362,6 +376,9 @@
           dHeight = $(".product-desc").height();
           console.log(dHeight);
           setTweens();
+          setSizeActive(); // --> funkcja dodająca rozmiar po wybraniu koloru
+
+
       });
 
 
