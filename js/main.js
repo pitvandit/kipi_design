@@ -19,10 +19,11 @@ var website = {
         $.extend( website.config, settings );
         website.setup();
 
-        website.initMenuAjax( website.config.ajaxhref );
+        
         website.initCartMenu();
-
-        website.loadPage('product-page.html');
+        website.initDeepLinks();
+        website.initMenuAjax( website.config.ajaxhref );
+        //website.loadPage('start.html');
         setInterval( function() {
             /*website.initFitSection( website.config.sectionfit );
              website.initFitImage( website.config.imagefit );*/
@@ -32,7 +33,6 @@ var website = {
         if( typeof obj == "undefined" ) obj = $('body');
         else obj = $(obj);
 
-        
         
         website.initFitSection( obj.find( website.config.sectionfit ) );
         website.initFitImage( obj.find( website.config.imagefit ) );
@@ -309,14 +309,36 @@ var website = {
 
     initMenuAjax: function(obj) {
         $(obj).each(function( id, el ) {
-            console.log('aaaa '+id)
+            console.log('aaaa '+id);
             var mLink = $(this).attr('href');
             $(this).click(function(e) {
                 e.preventDefault();
-                website.loadPage(mLink);
-
+                //website.loadPage(mLink);
+                window.location.hash = mLink;
             });
         });
+    },
+
+
+    initDeepLinks: function(obj) {
+
+        var newHash      = "",
+            $pageContent = $("#page-content");
+
+        $(window).bind('hashchange', function(){
+
+            newHash = window.location.hash.substring(1);
+            console.log('hash '+newHash)
+            if (newHash) {
+                website.loadPage(newHash);
+            } else {
+                website.loadPage('start.html');
+            };
+
+        });
+
+        $(window).trigger('hashchange');
+
     },
     
 

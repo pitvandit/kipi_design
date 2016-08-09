@@ -99,6 +99,7 @@
                 </div>
                 <div class="col-sm-6">
                     <a href="#" class="btn-primary pull-right set-new-account">Załóż nowe konto</a>
+                    <a href="about.html" class="btn-primary pull-right set-register">Zarejestruj</a>
                 </div>
             </div>
 
@@ -115,12 +116,19 @@
 
     $( document ).ready(function() {
         website.initMenuAjax( website.config.ajaxhref );
+        $(".set-register").hide();
         $(".set-new-account").click( function(e){
             e.preventDefault();
-            $(this).html('Zarejestruj');
-            $(this).removeClass('set-new-account');
             $('.register-form').slideDown(500);
             $('.reqired-fields').fadeIn(500);
+
+            $(this).fadeOut(function(){
+                $(".set-register").fadeIn();
+            });
+
+
+
+
         });
     });
 </script>
