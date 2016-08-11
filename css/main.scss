@@ -1173,10 +1173,13 @@ header {
 .product-desc .p-table .picker.size input[type="radio"] + label span {
   box-shadow: none;
   background: none;
+  width: auto;
+  height: 26px;
+  border-radius: 0px;
+  padding:0px 6px;
 }
 .product-desc .p-table .picker.size input[type="radio"]:checked + label span {
-  background-color: #000000;
-  color: #ffffff;
+  border-bottom:2px solid #000;
 }
 
 /* Size picker END */
@@ -1297,8 +1300,9 @@ header {
 
 .form-container .btn-label-bar {
   display: flex;
+  min-height:65px;
   justify-content: space-between;
-  align-content: center;
+  align-content: flex-start;
   border-bottom:1px solid #cccccc;
   padding:0px 0px 30px;
 }
@@ -1529,7 +1533,54 @@ header {
 
 
 .order-summary {
+  display:flex;
+  align-items: flex-end;
+  margin:0px 0px 100px 0px;
+}
+.order-summary .back {
+  width:220px;
+}
 
+.order-summary .info {
+  display:flex;
+  align-items: stretch;
+  border-bottom:1px solid #cccccc;
+}
+
+.order-summary .info .delivery-info {
+  border-right:1px solid #cccccc;
+}
+
+.order-summary .info .delivery-info .box-address {
+  padding:40px 40px 30px 0px;
+}
+
+.order-summary .info .delivery-info .box-delivery {
+  padding:40px 40px 30px 40px;
+  border-bottom:1px solid #cccccc;
+}
+
+.order-summary .info .delivery-info .box-payment {
+  padding:40px 40px 30px 40px;
+}
+
+.order-summary .pricing {
+  flex:1 0 auto;
+  align-self: stretch;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.order-summary .pricing .list {
+  flex:1 0 auto;
+  text-align: right;
+  padding:40px 0px;
+}
+
+.order-summary .pricing .list span {
+  text-transform: uppercase;
+  font-size:1.8rem;
+  letter-spacing: 2px;
 }
 
 

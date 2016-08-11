@@ -201,10 +201,10 @@
 
 <div class="product-pic-main-mobile hidden-md hidden-lg">
     <ul class="bxslider">
-        <li class="section-fit image-fit" data-px-height="300">
+        <li class="section-fit image-fit" data-px-height="440">
             <img src="img/photos/product_sub1.jpg" alt=""/>
         </li>
-        <li class="section-fit image-fit" data-px-height="300">
+        <li class="section-fit image-fit" data-px-height="440">
             <img src="img/photos/product_sub1.jpg" alt=""/>
         </li>
     </ul>
@@ -375,7 +375,8 @@
           fHeight = $(".product-pic-flow").height();
           dHeight = $(".product-desc").height();
           console.log(dHeight);
-          setTweens();
+          setTimeout(setTweens, 500);
+          //setTweens();
           setSizeActive(); // --> funkcja dodająca rozmiar po wybraniu koloru
 
 

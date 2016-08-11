@@ -5,13 +5,75 @@
         <div class="col-md-5 form-container">
             <div class="btn-label-bar">
                 <h3 class="">Moje dane</h3>
-                <a href="#" class="btn-primary">Zmień moje dane</a>
+                <a href="#" class="btn-primary set-new-data">Zmień moje dane</a>
+
             </div>
+
+            <div class="register-form my-data">
+
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Imię lub firma*</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" placeholder="Imię lub firma" name="name">
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Nazwisko lub firma*</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" placeholder="Nazwisko lub firma" name="surname">
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Telefon</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" placeholder="Telefon kontaktowy" name="phone">
+                    </div>
+                </div>
+                <div class="clearfix" style="height:20px;"></div>
+                <a href="about.html" class="btn-primary pull-right set-register">Zarejestruj</a>
+                <div class="clearfix" style="height:20px;"></div>
+            </div>
+
+
         </div>
         <div class="col-md-5 col-md-offset-2 form-container">
             <div class="btn-label-bar">
                 <h3 class="">Mój adres do przesyłki</h3>
-                <a href="#" class="btn-primary">Zmień adres</a>
+                <a href="#" class="btn-primary set-new-address">Zmień adres</a>
+
+            </div>
+
+            <div class="register-form address">
+
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Imię lub firma*</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" placeholder="Imię lub firma" name="name">
+                    </div>
+                </div>
+
+                <div class="row row-space">
+                    <div class="col-sm-5">
+                        <span>Nazwisko lub firma*</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <input type="text" placeholder="Nazwisko lub firma" name="surname">
+                    </div>
+                </div>
+
+                <div class="clearfix" style="height:20px;"></div>
+                <a href="about.html" class="btn-primary pull-right set-address">Zmień dane adresowe</a>
+                <div class="clearfix" style="height:20px;"></div>
             </div>
         </div>
     </div>
@@ -264,6 +326,22 @@
 
 <script>
     $( document ).ready(function() {
-
+        website.initMenuAjax( website.config.ajaxhref );
+        $(".set-register").hide();
+        $(".set-address").hide();
+        $(".set-new-data").click( function(e){
+            e.preventDefault();
+            $('.register-form.my-data').slideDown(500);
+            $(this).fadeOut(function(){
+                $(".set-register").fadeIn();
+            });
+        });
+        $(".set-new-address").click( function(e){
+            e.preventDefault();
+            $('.register-form.address').slideDown(500);
+            $(this).fadeOut(function(){
+                $(".set-address").fadeIn();
+            });
+        });
     });
 </script>
