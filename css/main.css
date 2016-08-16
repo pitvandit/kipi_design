@@ -1004,6 +1004,11 @@ header {
   transform: scale(1.4);
   color: #000; }
 
+.product-desc .message {
+  text-align: right;
+  font-size: 1.8rem;
+  display: none; }
+
 .product-pic-flow {
   padding: 0px 0px 0px 30px; }
 

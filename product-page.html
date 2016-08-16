@@ -53,6 +53,10 @@
         </tr>
     </table>
 
+    <div class="message">
+        <span>Wybierz rozmiar aby dodać do koszyka</span>
+    </div>
+    
     <div class="social pull-left">
         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -256,6 +260,8 @@
         </tr>
     </table>
 
+
+
     <div class="social pull-left">
         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -319,15 +325,19 @@
 
   <script>
 
-      var pHeight = $(".product-pic-main").height();
-      var fHeight = $(".product-pic-flow").height();
-      var dHeight = $(".product-desc").height();
+      var pHeight;
+      var fHeight;
+      var dHeight;
 
       var controller;
       var sceneParallax;
       var sceneDesc;
 
       function setTweens() {
+
+          pHeight = $(".product-pic-main").actual('height');
+          fHeight = $(".product-pic-flow").actual('height');
+          dHeight = $(".product-desc").actual('height');
 
           // init controller
           controller = new ScrollMagic.Controller();
@@ -371,10 +381,6 @@
       $( document ).ready(function() {
           website.setup();
           website.initMenuAjax( '.grid-elem a' );
-          pHeight = $(".product-pic-main").height();
-          fHeight = $(".product-pic-flow").height();
-          dHeight = $(".product-desc").height();
-          console.log(dHeight);
           setTimeout(setTweens, 500);
           //setTweens();
           setSizeActive(); // --> funkcja dodająca rozmiar po wybraniu koloru
@@ -385,9 +391,9 @@
 
       $( window ).resize(function() {
 
-          pHeight = $(".product-pic-main").height();
-          fHeight = $(".product-pic-flow").height();
-          dHeight = $(".product-desc").height();
+          pHeight = $(".product-pic-main").actual('height');
+          fHeight = $(".product-pic-flow").actual('height');
+          dHeight = $(".product-desc").actual('height');
           sceneParallax.duration(pHeight);
           sceneDesc.duration(pHeight+fHeight-pHeight);
 
