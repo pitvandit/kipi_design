@@ -25,6 +25,15 @@
 
 @media (max-width: 992px) {
 
+  h1, .h1 {
+    font-size: 3.0rem;
+    letter-spacing: 2px;
+  }
+
+  .padding-page {
+    padding:0px 20px;
+  }
+
   header {
     top: 0;
     width: 100%;
@@ -224,6 +233,28 @@
     margin:0px;
   }
 
+  .product-pic-main-mobile .bx-wrapper .bx-controls-direction a {
+    height: 32px;
+    margin-top: -16px;
+    outline: 0 none;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    width: 30px;
+    z-index: 90;
+  }
+  .product-pic-main-mobile .bx-wrapper .bx-prev {
+    background: url("../img/slider-prev.png") no-repeat 50% 50%;
+    background-size: auto 16px;
+    left: 10px;
+  }
+
+  .product-pic-main-mobile .bx-wrapper .bx-next {
+    background: url("../img/slider-next.png") no-repeat 50% 50%;
+    background-size: auto 16px;
+    right: 10px;
+  }
+
   .product-desc {
     position: static;
     top: auto;
@@ -270,6 +301,192 @@
   .product-similar .line {
     border-bottom:1px solid #a8a8a8;
     margin:30px 15px 0px;
+  }
+
+
+  /* ===== YOUR ORDER  ===== */
+
+  .article-title {
+    padding:110px 15px 10px;
+    text-align: center;
+  }
+
+  .select-wide .selectboxit-container {
+    padding: 15px 0 15px;
+  }
+
+
+  .order-list-mobile {
+    padding:0px 20px;
+  }
+
+  .order-item-row-mobile {
+    display: flex;
+    padding:15px 0px;
+    border-bottom:1px solid #cccccc;
+  }
+  .order-item-row-mobile:first-of-type {
+    border-top:1px solid #cccccc;
+
+  }
+
+  .order-item-row-mobile .pic{
+    flex:0 0 auto;
+    width:95px;
+    margin-right:15px;
+  }
+
+  .order-item-row-mobile .pic img {
+    width:100%;
+  }
+
+  .order-item-row-mobile .item-info {
+    flex:1 1 auto;
+
+  }
+
+
+  .order-item-row-mobile .item-info h4 {
+    display: block;
+    margin:0 0 15px;
+    padding-right:40px;
+  }
+  .order-item-row-mobile .item-info span {
+    display: inline-block;
+    margin:0;
+    padding-right:20px;
+  }
+
+  .order-item-row-mobile .item-info .price {
+    right:0px;
+    bottom:0px;
+  }
+
+  .order-item-row-mobile .item-info .close-x {
+    top:0px;
+    right:0px;
+  }
+
+  .order-item-row-mobile .elem-del {
+    width:40px;
+    height:30px;
+    margin-right:-7px;
+    cursor: pointer;
+  }
+
+  .order-item-row-mobile .elem-del span.icon-bar {
+    background: #000000;
+    border-radius: 0;
+    display: block;
+    height: 2px;
+    margin: 0;
+    position: absolute;
+    right: 5px;
+    top: 13px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+    width: 26px;
+  }
+  .order-item-row-mobile .elem-del span.icon-bar:last-of-type {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition-delay: 0.1s;
+  }
+
+  .order-list-mobile .summary {
+    text-align: right;
+    padding:20px 0px;
+  }
+
+  .order-list-mobile .summary span {
+    text-transform: uppercase;
+    font-size:1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .order-summary {
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin:20px 20px 100px 20px;
+  }
+  .order-summary .back {
+    width:220px;
+    order: 3;
+  }
+
+  .order-summary .info {
+    flex: 1 0 auto;
+    display:flex;
+    flex-direction: column;
+    border-bottom:none;
+  }
+
+  .order-summary .info .delivery-info {
+    border-right:none;
+  }
+
+  .order-summary .info .delivery-info .box-address {
+    padding:20px 0px 20px 0px;
+    border-bottom:1px solid #cccccc;
+  }
+
+  .order-summary .info .delivery-info .box-delivery {
+    padding:20px 0px 20px 0px;
+    border-bottom:1px solid #cccccc;
+  }
+
+  .order-summary .info .delivery-info .box-payment {
+    padding:20px 0px 20px 0px;
+    border-bottom:1px solid #cccccc;
+  }
+
+  .order-summary .pricing {
+    flex:1 0 auto;
+    align-self: stretch;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .order-summary .pricing .list {
+    flex:1 0 auto;
+    text-align: right;
+    padding:20px 0px;
+  }
+
+  .order-summary .pricing .list span {
+    text-transform: uppercase;
+    font-size:1.8rem;
+    letter-spacing: 2px;
+  }
+
+  /* ===== My Account ===== */
+
+  .form-container input {
+    display: inline-block;
+    width:100%;
+    padding:15px 0px 15px 0px;
+    border:none;
+    border-bottom:1px solid #cccccc;
+  }
+
+  /* ===== ABOUT US ===== */
+
+  .about-us {
+
+  }
+
+  .about-us .text-holder {
+    background: #000000;
+    color:#ffffff;
+    padding:30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
   }
 
   /* ===== FOOTER ===== */

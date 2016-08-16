@@ -19,7 +19,7 @@ var website = {
         $.extend( website.config, settings );
         website.setup();
 
-        
+        website.initNav();
         website.initCartMenu();
         website.initDeepLinks();
         website.initMenuAjax( website.config.ajaxhref );
@@ -47,7 +47,7 @@ var website = {
         website.initSmoothScroll( obj.find( website.config.smoothscroll ) );
         website.initAnimate( obj.find( website.config.animate ) );
         website.initNanoScroller( obj.find( website.config.nano ) );
-        website.initNav();
+
 
 
     },
@@ -75,8 +75,8 @@ var website = {
         };
 
 
-        if( $(".menu-holder").hasClass("init") )
-            return;
+        if( $(".menu-holder").hasClass("init") ) return;
+
         $(".menu-holder").addClass("init");
 
 
@@ -84,7 +84,9 @@ var website = {
             menuShow();
         });
         $('.menu-holder').mouseleave(function() {
-            menuHide();
+            if ( $(window).width() >= 991 ) {
+                menuHide();
+            };
         });
 
         $('.menu-holder .menu-close').click(function() {
@@ -334,7 +336,7 @@ var website = {
         $(window).bind('hashchange', function(){
 
             newHash = window.location.hash.substring(1);
-            console.log('hash '+newHash)
+            console.log('hash '+newHash);
             if (newHash) {
                 website.loadPage(newHash);
             } else {
