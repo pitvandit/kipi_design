@@ -205,10 +205,10 @@
 
 <div class="product-pic-main-mobile hidden-md hidden-lg">
     <ul class="bxslider">
-        <li class="section-fit image-fit" data-px-height="440">
+        <li class="section-fit image-fit" data-px-height-xs="440" data-percent-height-sm="80">
             <img src="img/photos/product_sub1.jpg" alt=""/>
         </li>
-        <li class="section-fit image-fit" data-px-height="440">
+        <li class="section-fit image-fit" data-px-height-xs="440" data-percent-height-sm="80">
             <img src="img/photos/product_sub1.jpg" alt=""/>
         </li>
     </ul>
@@ -283,7 +283,7 @@
     <div class="container-fluid">
         <div class="row" id="iso-grid">
             <!--ELEM -->
-            <div class="col-xs-6 grid-elem">
+            <div class="col-sm-4 col-xs-6 grid-elem">
                 <a href="product-page.html" class="item set-rel">
                     <div class="pic-holder image-fit">
                         <img src="img/products/item1.jpg" alt=""/>
@@ -301,7 +301,23 @@
             </div>
             <!--ELEM END-->
             <!--ELEM -->
-            <div class="col-xs-6 grid-elem">
+            <div class="col-sm-4 col-xs-6 grid-elem">
+                <a href="product-page.html" class="item set-rel">
+                    <div class="pic-holder image-fit">
+                        <img src="img/products/item2.jpg" alt=""/>
+                    </div>
+                    <div class="desc set-abs">
+                        <h2>pink T-shirt</h2>
+                        <div class="price">
+                            <span>250 <small>pln</small></span>
+                        </div>
+                        <button class="btn-primary white">Zobacz więcej</button>
+                    </div>
+                </a>
+            </div>
+            <!--ELEM END-->
+            <!--ELEM -->
+            <div class="col-sm-4 col-xs-6 grid-elem">
                 <a href="product-page.html" class="item set-rel">
                     <div class="pic-holder image-fit">
                         <img src="img/products/item2.jpg" alt=""/>
@@ -384,7 +400,7 @@
           //setTweens();
           setSizeActive(); // --> funkcja dodająca rozmiar po wybraniu koloru
 
-
+          $("body").scrollTop(0);
       });
 
 

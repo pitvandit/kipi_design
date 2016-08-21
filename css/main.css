@@ -245,12 +245,16 @@ header {
   margin-bottom: 5px;
   margin-left: 27px;
   width: 20px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 .menu-open:hover .icon-bar:last-of-type {
   margin-top: 5px;
   margin-left: 27px;
   width: 20px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
 .menu-holder {
@@ -575,9 +579,17 @@ header {
   width: 2px; }
 
 .main-viz .intro-box {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   top: 50%;
   left: 50%;
@@ -666,17 +678,6 @@ header {
   letter-spacing: 2px;
   font-weight: 700; }
 
-.selectboxit-text {
-  float: left;
-  overflow: hidden;
-  text-indent: 0px;
-  text-overflow: ellipsis;
-  font-family: "NeutrafaceText", sans-serif;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700; }
-
 .selectboxit .selectboxit-option-icon-container {
   margin-left: 0px; }
 
@@ -693,6 +694,8 @@ header {
   transition: all 0.2s ease; }
 
 .selectboxit-open .selectboxit-arrow-container {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .selectboxit .selectboxit-arrow-container .selectboxit-arrow {
@@ -1001,6 +1004,8 @@ header {
   transition: all 0.2s linear; }
 
 .product-desc .social a:hover i {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
   transform: scale(1.4);
   color: #000; }
 
@@ -1072,9 +1077,15 @@ header {
   display: none; }
 
 .form-container .btn-label-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-height: 65px;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
   align-content: flex-start;
   border-bottom: 1px solid #cccccc;
   padding: 0px 0px 30px; }
@@ -1084,7 +1095,11 @@ header {
 
 .order-history {
   border-top: 1px solid #cccccc;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start; }
 
 .order-history > div {
@@ -1144,6 +1159,8 @@ header {
   display: none; }
 
 .order-item-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding: 10px 0px; }
 
@@ -1155,11 +1172,19 @@ header {
   width: 100%; }
 
 .order-item-row .item-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center; }
 
 .order-item-row .item-info .name {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   border-bottom: 1px solid #cccccc;
   padding: 50px 0px;
@@ -1247,8 +1272,14 @@ header {
   right: 0px; }
 
 .order-list .summary {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 50px 0px 50px 220px; }
 
@@ -1258,15 +1289,25 @@ header {
   letter-spacing: 2px; }
 
 .order-accept {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
   align-items: flex-end; }
 
 .order-accept p {
   margin: 0px 40px 0px 10px; }
 
 .order-summary {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
   align-items: flex-end;
   margin: 0px 0px 100px 0px; }
 
@@ -1274,7 +1315,11 @@ header {
   width: 220px; }
 
 .order-summary .info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid #cccccc; }
 
@@ -1292,13 +1337,25 @@ header {
   padding: 40px 40px 30px 40px; }
 
 .order-summary .pricing {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
   align-self: stretch;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
   align-items: flex-end; }
 
 .order-summary .pricing .list {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   text-align: right;
   padding: 40px 0px; }
@@ -1314,13 +1371,23 @@ header {
   background: #000000;
   color: #ffffff;
   padding: 80px 120px 80px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch; }
 
 .about-us .text-holder .nano {
   height: auto;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
   flex: 0 1 auto; }
 
 .about-us .text-holder .nano-content > div {
